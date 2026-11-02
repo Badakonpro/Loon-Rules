@@ -20,3 +20,14 @@ https://raw.githubusercontent.com/Badakonpro/Loon-Rules/main/OpenAI.lsr, policy=
 https://raw.githubusercontent.com/Badakonpro/Loon-Rules/main/Claude.lsr, policy=AI, tag=Claude, enabled=true
 https://raw.githubusercontent.com/Badakonpro/Loon-Rules/main/Gemini.lsr, policy=AI, tag=Gemini, enabled=true
 ```
+
+## 2026-11-02 核对更新
+
+固定上游 `v2fly/domain-list-community` 提交
+`01add61fbaf719b55673d969615cd328e80f214c`（2026-11-01），仅合入经用途核对的最小增补：
+
+- OpenAI：43 → 44 条，增加 `openai.org` 显式规则；原有关键词规则已覆盖，实际范围不变。
+- Claude：11 → 15 条，增加 `claude.app`、`claude.dev` 后缀与 `claude.new`、`claudeacademy.com` 精确根域。
+- Gemini：43 → 49 条，增加 Gemini Web、Workspace Gemini 与 NotebookLM 的 6 个精确 API 主机。
+- 原有规则不删改；不照搬未知正则、不扩大共享 CDN 或 `googleapis.com` 整站；6 个未明确生产用途的 Claude 域名暂缓。
+- 本段记录本地维护内容，发布状态以远端仓库为准；未进行 Loon 客户端业务实测。

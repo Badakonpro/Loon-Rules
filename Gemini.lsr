@@ -1,9 +1,9 @@
 # —— Google Gemini / DeepMind / Code Assist / AI Studio 分流规则 ——
 # 上游源: v2fly/domain-list-community (data/google-deepmind)
-# 来源链接: https://raw.githubusercontent.com/v2fly/domain-list-community/c1c2cf0d252871e8739747714df06e8d2671f72f/data/google-deepmind
-# 钉死提交: c1c2cf0d252871e8739747714df06e8d2671f72f (2026-09-22)
-# 转换规则: full: -> DOMAIN，其余 -> DOMAIN-SUFFIX
-# 规则数: 43
+# 来源链接: https://raw.githubusercontent.com/v2fly/domain-list-community/01add61fbaf719b55673d969615cd328e80f214c/data/google-deepmind
+# 钉死提交: 01add61fbaf719b55673d969615cd328e80f214c (2026-11-01)
+# 转换规则: full: -> DOMAIN；裸域名 -> DOMAIN-SUFFIX；本次新增 API 收窄为 DOMAIN
+# 规则数: 49
 
 # Google DeepMind
 DOMAIN-SUFFIX,deepmind.com
@@ -71,3 +71,11 @@ DOMAIN-SUFFIX,antigravity-unleash.goog
 
 # Stitch
 DOMAIN-SUFFIX,stitch.withgoogle.com
+
+# 2026-11-02 审查补充（仅本次已确认域名；原有规则完整保留）
+DOMAIN,geminiweb-pa.clients.google.com
+DOMAIN,geminiweb-pa.clients6.google.com
+DOMAIN,appsgenaiserver-pa.clients.google.com
+DOMAIN,appsgenaiserver-pa.clients6.google.com
+DOMAIN,appsgenaiserver-pa.googleapis.com
+DOMAIN,labstailwind.pa.googleapis.com
